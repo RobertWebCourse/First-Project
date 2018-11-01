@@ -1,0 +1,12 @@
+* {
+	font-family: Arial;
+}
+h1{
+	color: #ff3399;
+}
+p span{
+	font-style: italic;
+}
+.clr_gray {
+	color:gray;
+}

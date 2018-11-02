@@ -1,0 +1,12 @@
+input[type="text"] {
+	text-align: right;
+	height: 40px;
+	font-weight: bolder;
+}
+
+input[type="button"] {
+	width: 55px;
+	height: 40px;
+	color: red;
+	background-color: #e0e0e0;
+}

@@ -6,12 +6,14 @@
 </head>
 <body>
 	<script type="text/javascript">
-		function userInfo() {
-			var userName = prompt("Įveskite savo Varda", 'Jonas');
-			var userSurname = prompt("Įveskite savo Varda", 'Jonaitis');
+		function userInfo(name, surName) {
+			name = prompt("Jūsu vardas", '');
 
-			console.log(userName + ' ' + userSurname + ' kątik prisijungė');
+			surName = prompt("Jūsu pavardė", '');
+
+			alert(name + ' ' + surName + ' kątik prisijungė');
 		}
+		userInfo();
 	</script>
 </body>
 </html>

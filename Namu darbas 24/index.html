@@ -7,10 +7,13 @@
 <body>
 
 	<script type="text/javascript">
-		function userInfo(Name, surName) {
-			console.log(Name + ' ' + surName + ' ką tik prisijungė');
+		function userInfo(name,surName) {
+			console.log(name + ' ' + surName + ' ką tik prisijungė');
 		}
-		userInfo('Jonas','Jonaitis');
+
+		var name = prompt("Jusu vardas?", '');
+		userInfo(name,'Jonaitis');
+		
 	</script>
 </body>
 </html>

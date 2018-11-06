@@ -1,0 +1,46 @@
+body {
+	background-color: #f7b054;
+	font-family: Arial, Georgia, sans-serif;
+}
+fieldset {
+	background-color: #ffc43d;
+	border: 3px dotted #c9900c;
+}
+legend {
+	font-weight: bold;
+	color: #e5e5e5;
+	text-shadow: 0px 0px 3px black;
+}
+table tr{
+	color: #c12e2e;
+	font-style: italic;
+}
+select {
+	background-color: rgb(239, 157, 16, 0.5);
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+option {
+	color: black;
+}
+span {
+	color: #ff4300;
+	text-shadow: 0px 0px 1px orange;
+}
+.optionSoc {
+	padding: 15px;
+	font-size: 18px;
+}
+.opsSc {
+	color: white;
+}
+input[type="button"] {
+	background-color: white;
+	border: 2px solid #e5e5e5;
+	width: 80px;
+	height: 40px;
+	font-weight: bold;
+}
+input[type="button"]:hover {
+	box-shadow: -2px 2px 3px #d6d6d6;
+}

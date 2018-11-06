@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/main.css">
+	<title>HTML 8</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Jūsų informacija</legend>
+			<table>
+				<tr>
+					<td><label for="vardas">Vardas:</label></td>
+					<td>
+						<input type="text" id="vardas">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="pavarde">Pavardė:</label></td>
+					<td>
+						<input type="text" id="pavarde">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Klausimai</legend>
+			<label>
+			<span>Kaip sužinojote apie mus?</span>
+			<select name="info_soc">
+				<option value="google">Google</option>
+				<option value="facebook">Facebook</option>
+				<option value="delfi">Delfi</option>
+				<option value="kiti">Kitur</option>
+			</select>
+			<br><br>
+			<div class="optionSoc">
+				<span>Ar apsilankysite vėl?</span>
+				<br>
+				<label>
+					<span class="opsSc">Taip</span>
+					<input type="radio" value="taip" name="poll">
+				</label>
+				<label>
+					<span class="opsSc">Ne</span>
+					<input type="radio" value="ne" name="poll">
+				</label>
+				<label>
+					<span class="opsSc">Galbūt</span>
+					<input type="radio" value="galbut" name="poll">
+			</div>
+			</label>
+			<br><br>
+			<span>Ką manote apie kursą?</span>
+			<br>
+			<textarea name="apklausa" id="form2_apk" cols="100" rows="10" placeholder="Rašykite viską ką galvojate"></textarea>
+			<br>
+			<span>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</span>
+			<br>
+			<table>
+				<tr>
+					<td>	
+						<input type="checkbox" id="c#">
+					</td>
+					<td><label for="C#">C#</label></td>
+					<td>
+						<input type="checkbox" id="java">
+					</td>
+					<td><label for="java">JAVA</label></td>
+					<td>
+						<input type="checkbox" id="php">
+					</td>
+					<td><label for="php">PHP</label></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="html">
+					</td>
+					<td><label for="html">HTML</label></td>
+					<td>
+						<input type="checkbox" id="css">
+					</td>
+					<td><label for="css">CSS</label></td>
+					<td>
+						<input type="checkbox" id="javascript">
+					</td>
+					<td><label for="javascript">JavaScript</label></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="python">
+					</td>
+					<td><label for="python">Python</label></td>
+					<td>
+						<input type="checkbox" id="ruby">
+					</td>
+					<td><label for="ruby">Ruby</label></td>
+				</tr>
+			</table>
+			<br><br>
+			<input type="button" value="Siūsti">
+		</fieldset>
+	</form>
+</body>
+</html>

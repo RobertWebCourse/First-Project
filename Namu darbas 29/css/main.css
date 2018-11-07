@@ -5,6 +5,9 @@
 	background-color: #ffef7c;
 	padding: 20px;
 }
+.reg_user table tr td{
+	border: none;
+}
 .list_user th, td {
 	height: 30px;
 }

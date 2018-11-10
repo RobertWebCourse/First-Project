@@ -6,16 +6,17 @@
 </head>
 <body>
 	<script>
-		function nameList(noname,names ) {
-			var names = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
-			for(var i = 0; i < names.length; i++) {
-				if(names[i] == noname) {
-					delete names[i];
+		function nameList(names, noname ) {
+			var names = names;
+			var arr = names.split(', ');
+			for(var i = 0; i < arr.length; i++) {
+				if(arr[i] == noname) {
+					delete arr[i];
 				}
 			}
-			console.log(names);
+			console.log(arr);
 		}
-		nameList("Petras");
+		nameList("Jonas, Petras, Martynas, Ona, Urtė, Ema", 'Ona');
 	</script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function nameList(noname,names ) {
+			var names = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+			for(var i = 0; i < names.length; i++) {
+				if(names[i] == noname) {
+					delete names[i];
+				}
+			}
+			console.log(names);
+		}
+		nameList("Petras");
+	</script>
+</body>
+</html>

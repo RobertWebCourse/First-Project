@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+</head>
+<body>
+	<script>
+		function getObject (firstObject, secondObject) {
+			var firstObject = firstObject;
+			var secondObject = secondObject;
+
+			var object = firstObject.split(', ');
+			var object2 = secondObject.split(', ');
+
+			for(var i = 0; i < object.length; i++) {
+				console.log(object[i]);
+			}
+			for(var i = 0; i < object2.length; i++) {
+				console.log(object2[i]);
+			}
+
+
+			// console.log(object);į
+		}
+		getObject("#1, Prekė: Atsuktuvas, Pagaminimo data: 2018, Spalva: geltona", "\n#2,Prekė: Raktas, Pagaminimo data: 2018, Rankenos spava: pilka, Kaina: 2 EUR");
+	</script>
+</body>
+</html>

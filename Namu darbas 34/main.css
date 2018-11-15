@@ -3,7 +3,13 @@ input[type="text"] {
 	height: 40px;
 	font-weight: bolder;
 }
-
+input[type="text"]:hover {
+	cursor: default;
+}
+input[type="text"]:focus {
+	cursor: default;
+	outline: none;
+}
 input[type="button"] {
 	width: 55px;
 	height: 40px;

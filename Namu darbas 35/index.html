@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Viesbuciai</title>
+</head>
+<body>
+	<script>
+		var viesbuciai = [
+			{
+				"name":"Radisson",
+				"Address":"Konstitucijos pr.29",
+				"Rooms": [
+					{"Number":210, "GuestCount":2, "Price":100},
+					{"Number":211, "GuestCount":2, "Price":110},
+					{"Number":212, "GuestCount":2, "Price":109}
+				]
+			},
+			{
+				"name": "Vilnius Inn",
+				"Address": "Šiaulių g. 3",
+				"Rooms":[
+					{"Number":11, "GuestCount":2, "Price":100},
+					{"Number":15, "GuestCount":1, "Price":58},
+					{"Number":22, "GuestCount":2, "Price":80},
+					{"Number":23, "GuestCount":2, "Price":99}
+				]
+			}
+		];
+
+		document.write("<h1>Viešbučiai (su laisvais kambariais)");
+		function autoTable(obj) {
+				document.write("<h2>" + viesbuciai[obj].name + "</h2>");
+				document.write("<h2>" + viesbuciai[obj].Address + "</h2>");
+
+				var table = document.write("<table border='1'><tr>");
+				document.write("<th>Kambario numeris</th>" + "<th>Žmonių skaičius</th>" + "<th>Kaina</th></tr>");
+				document.write("<tr>");
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					document.write("<td>" + viesbuciai[obj].Rooms[0].Number + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[0].GuestCount + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[0].Price + "</td>");
+				}
+				document.write("</tr><tr>");
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					document.write("<td>" + viesbuciai[obj].Rooms[1].Number + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[1].GuestCount + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[1].Price + "</td>");
+				}
+				document.write("</tr><tr>");
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					document.write("<td>" + viesbuciai[obj].Rooms[2].Number + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[2].GuestCount + "</td>");
+					document.write("<td>" + viesbuciai[obj].Rooms[2].Price + "</td>");
+				}
+				document.write("</tr>")
+				if(viesbuciai[obj].Rooms.length > 3) {
+					console.log("< 4 " + obj);
+					document.write("<tr>");
+					for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+						document.write("<td>" + viesbuciai[obj].Rooms[3].Number + "</td>");
+						document.write("<td>" + viesbuciai[obj].Rooms[3].GuestCount + "</td>");
+						document.write("<td>" + viesbuciai[obj].Rooms[3].Price + "</td>");
+					}
+					document.write("</tr>");
+				}
+				document.write("</tr></table>");
+			}
+		autoTable(0);
+		autoTable(1);
+
+
+		// var arr = ["Test", "Test 2", "Test3",
+		// 	{
+		// 		"PervyjjObjekt":"Pervyjobjsss"
+		// 	}
+		// ];
+		// var obj = {"Object1":"ResultObject1", "Object2":"ResultObjeect2"};
+		// console.log(arr[2]);
+		// console.log(obj.Object2);
+
+		// console.log(arr[3].PervyjjObjekt);
+	</script>
+</body>
+</html>

@@ -6,24 +6,22 @@
 </head>
 <body>
 	<script>
-		function getObject (firstObject, secondObject) {
-			var firstObject = firstObject;
-			var secondObject = secondObject;
-
-			var object = firstObject.split(', ');
-			var object2 = secondObject.split(', ');
-
-			for(var i = 0; i < object.length; i++) {
-				console.log(object[i]);
-			}
-			for(var i = 0; i < object2.length; i++) {
-				console.log(object2[i]);
+		var objektas1 = {"id":1,"Prekė":"Atsuktuvas","Pagaminimo data":"2018","Spalva":"geltona","Kaina": "5"}; 
+		var objektas2 = {"id":2,"Prekė":"Raktas","Pagaminimo data":"2018","Spalva":"pilka","Kaina": "2"};
+		
+		function getObjects(obj, obj2) {
+			for(key in obj) {
+				console.log(key + " " + obj[key] + "\n");
 			}
 
+			console.log("\n");
 
-			// console.log(object);į
+			for(key in obj2) {
+				console.log(key + " " + objektas2[key] + "\n");
+			}
 		}
-		getObject("#1, Prekė: Atsuktuvas, Pagaminimo data: 2018, Spalva: geltona", "\n#2,Prekė: Raktas, Pagaminimo data: 2018, Rankenos spava: pilka, Kaina: 2 EUR");
+
+		getObjects(objektas1,objektas2)
 	</script>
 </body>
 </html>

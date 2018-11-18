@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jq</title>
+</head>
+<body>
+	<script src="jquery/jquery-3.3.1.js"></script>
+	<script>
+		var viesbuciai = [
+			{
+				"name":"Radisson",
+				"Address":"Konstitucijos pr.29",
+				"Rooms": [
+					{"Number":210, "GuestCount":2, "Price":100},
+					{"Number":211, "GuestCount":2, "Price":110},
+					{"Number":212, "GuestCount":2, "Price":109}
+				]
+			},
+			{
+				"name": "Vilnius Inn",
+				"Address": "Šiaulių g. 3",
+				"Rooms":[
+					{"Number":11, "GuestCount":2, "Price":100},
+					{"Number":15, "GuestCount":1, "Price":58},
+					{"Number":22, "GuestCount":2, "Price":80},
+					{"Number":23, "GuestCount":2, "Price":99}
+				]
+			}
+		];
+
+
+		$('body').html("<h1>Viešbučiai (su laisvais kambariais)");
+
+		function autoTable(obj) {
+				$('body').html("<h2>" + viesbuciai[obj].name + "</h2>");
+				$('body').html("<h2>" + viesbuciai[obj].Address + "</h2>");
+
+				var table = document.write("<table border='1'><tr>");
+
+				$('table').html("<th>Kambario numeris</th>" + "<th>Žmonių skaičius</th>" + "<th>Kaina</th></tr>");
+				$('table').html("<tr>");
+
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					$('table').html("<td>" + viesbuciai[obj].Rooms[0].Number + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[0].GuestCount + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[0].Price + "</td>");
+				}
+				$('table').html("</tr><tr>");
+
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					$('table').html("<td>" + viesbuciai[obj].Rooms[1].Number + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[1].GuestCount + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[1].Price + "</td>");
+				}
+				$('table').html("</tr><tr>");
+
+				for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+					$('table').html("<td>" + viesbuciai[obj].Rooms[2].Number + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[2].GuestCount + "</td>");
+					$('table').html("<td>" + viesbuciai[obj].Rooms[2].Price + "</td>");
+				}
+				$('table').html("</tr>");
+
+				if(viesbuciai[obj].Rooms.length > 3) {
+					console.log("< 4 " + obj);
+					$('table').html("<tr>");
+					for(var i = 2; i < viesbuciai[obj].Rooms.length; i ++) {
+						$('table').html("<td>" + viesbuciai[obj].Rooms[3].Number + "</td>");
+						$('table').html("<td>" + viesbuciai[obj].Rooms[3].GuestCount + "</td>");
+						$('table').html("<td>" + viesbuciai[obj].Rooms[3].Price + "</td>");
+					}
+					$('table').html("</tr>");
+				}
+				$('table').html("</tr></table>");
+			}
+		for (var i = 0; i <= viesbuciai.length; i++) {
+			autoTable(i);
+		}
+	</script>
+</body>
+</html>

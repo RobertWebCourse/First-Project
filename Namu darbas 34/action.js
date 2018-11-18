@@ -14,6 +14,9 @@ for(var i = 0; i < numbutton.length; i++) {
 		}else if(this.value == 'C') {
 			nokeypress.value = '';
 		}
+		else if (this.value == 'CE') {
+			nokeypress.value = nokeypress.value.substr(0, nokeypress.value.length - 1);
+		}
 	}
 }
 

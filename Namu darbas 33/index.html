@@ -6,22 +6,34 @@
 </head>
 <body>
 	<script>
-		var objektas1 = {"id":1,"Prekė":"Atsuktuvas","Pagaminimo data":"2018","Spalva":"geltona","Kaina": "5"}; 
-		var objektas2 = {"id":2,"Prekė":"Raktas","Pagaminimo data":"2018","Spalva":"pilka","Kaina": "2"};
+		var objektas1 = {"id":1,"item":"Atsuktuvas","date":"2018","color":"geltona","price": "5"};
+		var objektas2 = {"id":2,"item":"Raktas","date":"2018","color":"pilka","price": "2"};
+		var masivas = ["Prekė", "Pagaminimo data", "Spalva", "Kaina"];
 		
-		function getObjects(obj, obj2) {
+		function getObjects(obj) {
 			for(key in obj) {
-				console.log(key + " " + obj[key] + "\n");
+				switch(key) {
+					case "id":
+						console.log("#" + obj[key] + "\n");
+					break;
+					case "item":
+						console.log("Prekė" + " " + obj[key] + "\n");
+					break;
+					case "date":
+						console.log("Pagaminimo data" + " " + obj[key] + "\n");
+					break;
+					case "color" :
+						console.log("Spalva" + " " + obj[key] + "\n");
+					break;
+					case "color" :
+						console.log("Kaina" + " " + obj[key] + "\n");
+					break;
+				}
 			}
-
 			console.log("\n");
-
-			for(key in obj2) {
-				console.log(key + " " + objektas2[key] + "\n");
-			}
 		}
-
-		getObjects(objektas1,objektas2)
+			getObjects(objektas1);
+			getObjects(objektas2);
 	</script>
 </body>
 </html>

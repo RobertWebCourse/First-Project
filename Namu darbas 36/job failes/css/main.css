@@ -1,0 +1,33 @@
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #686461;
+  width: 500px;
+}
+tr {
+  transition: all 0.6s;
+}
+th {
+  border-bottom: 3px solid #B9B29F;
+  padding: 10px;
+  text-align: left;
+  transition: all 0.6s;
+}
+tr:first-child:hover {
+	background-color: #c0d6f9;
+	transition: all 0.6s;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  background: white;
+}
+tr:nth-child(even) {
+  background: #E8E6D1;
+}
+tr:hover {
+  transition: all 0.6s;
+  background-color: #b1c3e0;
+  cursor: pointer;
+}

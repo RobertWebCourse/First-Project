@@ -1,0 +1,307 @@
+* {
+	font-family: Arial, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+@media screen and (min-width: 900px) {
+	.cl-lg-1 { width: 8%; }
+	.cl-lg-2 { width: 10%; }
+	.cl-lg-3 { width: 15%; }
+	.cl-lg-4 { width: 20%; }
+	.cl-lg-5 { width: 26%; }
+	.cl-lg-6 { width: 30%; }
+	.cl-lg-7 { width: 37%; }
+	.cl-lg-8 { width: 40%; }
+	.cl-lg-9 { width: 54%; }
+	.cl-lg-10 { width: 60%; }
+	.cl-lg-11 { width: 66.66%; }
+	.cl-lg-12 { width: 70%; }
+	.cl-lg-13 { width: 75%; }
+	.cl-lg-14 { width: 80%; }
+	.cl-lg-15 { width: 84%; }
+	.cl-lg-16 { width: 90%; }
+	.cl-lg-17 { width: 97%; }
+	.cl-lg-18 { width: 100%; }
+}
+@media screen and (min-width: 500px) and (max-width: 899px) {
+	.cl-pg-1 { width: 8%; }
+	.cl-pg-2 { width: 10%; }
+	.cl-pg-3 { width: 15%; }
+	.cl-pg-4 { width: 20%; }
+	.cl-pg-5 { width: 26%; }
+	.cl-pg-6 { width: 30%; }
+	.cl-pg-7 { width: 37%; }
+	.cl-pg-8 { width: 40%; }
+	.cl-pg-9 { width: 54%; }
+	.cl-pg-10 { width: 60%; }
+	.cl-pg-11 { width: 66.66%; }
+	.cl-pg-12 { width: 70%; }
+	.cl-pg-13 { width: 75%; }
+	.cl-pg-14 { width: 80%; }
+	.cl-pg-15 { width: 84%; }
+	.cl-pg-16 { width: 90%; }
+	.cl-pg-17 { width: 97%; }
+	.cl-pg-18 { width: 100%; }
+}
+@media screen and (max-width: 499px) {
+	.cl-md-1 { width: 8%; }
+	.cl-md-2 { width: 10%; }
+	.cl-md-3 { width: 15%; }
+	.cl-md-4 { width: 20%; }
+	.cl-md-5 { width: 26%; }
+	.cl-md-6 { width: 30%; }
+	.cl-md-7 { width: 37%; }
+	.cl-md-8 { width: 40%; }
+	.cl-md-9 { width: 54%; }
+	.cl-md-10 { width: 60%; }
+	.cl-md-11 { width: 66.66%; }
+	.cl-md-12 { width: 70%; }
+	.cl-md-13 { width: 75%; }
+	.cl-md-14 { width: 80%; }
+	.cl-md-15 { width: 84%; }
+	.cl-md-16 { width: 90%; }
+	.cl-md-17 { width: 97%; }
+	.cl-md-18 { width: 100%; }
+}
+body {
+	background-image: url(../images/14885.jpg);
+}
+#main {
+	width: 900px;
+	margin: 0 auto;
+}
+header{
+	margin: 0 auto;
+	background: #1e5799; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(#1e5799 0%, #fc8f2f 0%, #f2a426 100%, #7db9e8 100%);
+background: -o-linear-gradient(#1e5799 0%, #fc8f2f 0%, #f2a426 100%, #7db9e8 100%);
+background: linear-gradient(#1e5799 0%, #fc8f2f 0%, #f2a426 100%, #7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	height: 100px;
+}
+.center_menu {
+	height: 73px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header ul {
+	margin-top: 14px;
+}
+header ul li {
+	float: left;
+	list-style: none;
+	margin-right: 25px;
+}
+header a {
+	margin-top: 5px;
+	background-color: #e53935;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 140px;
+	height: 40px;
+	transition: all 0.5s;
+}
+header a:hover {
+	background-color: #d32f2f;
+	box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.5); 
+	transition: all 0.5s;
+}
+#logo{
+	float: left;
+	width: 100px;
+	height: 75px;
+	margin: 10px;
+}
+#logo img {
+	width: 100px;
+	height: 40px;
+}
+#logo p {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #ffcdd2;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	font-style: italic;
+	font-family: serif;
+}
+#search_input input {
+	border-top-left-radius: 15px;
+	background-color: white;
+	height: 26px;
+	width: 177px;
+	float: right;
+}
+#search_input input:focus {
+	border-bottom: 0.5px solid #e53935;
+}
+#search_input input::placeholder {
+	font-style: italic;
+	padding-left: 10px;
+}
+aside {
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+	margin-top: 40px;
+	width: 135px;
+	float: left;
+	background-color: #dcedc8;
+}
+aside h5 {
+	margin: 0px;
+	height: 40px;
+	line-height: 40px;
+	color: #ffd54f;
+	font-style: italic;
+	background-color: #ff8f00;
+	text-align: center;
+	border-bottom: 2px solid #c0ca33;
+}
+aside > p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+	font-weight: bolder;
+	text-align: center;
+}
+.variants_us p{
+	padding: 5px;
+}
+.variants_us p:nth-child(4) {
+	margin-bottom: 15px;
+}
+.variants_us a {
+	width: 100%;
+	margin: 0 auto;
+}
+article:nth-child(3) {
+	margin-top: 32px;
+}
+article{
+	margin-bottom: 10px;
+	margin-left: 15px;
+	float: left;
+	height: 200px;
+	background-color: #cfd8dc;
+	overflow: hidden;
+}
+article img {
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	max-width: 200px;
+	max-height: 100px;
+	float: left;
+	margin-right: 12px; 
+}
+.news_info {
+	margin-top: 5px;
+	margin-right: 25px;
+	float: right;
+	list-style: none;
+	border-bottom: 2px solid white;
+	margin-bottom: 10px;
+}
+.news_info li {
+	margin-left: 70px;
+	float: left;
+}
+.content {
+	width: 100%;
+}
+.content h5 {
+	font-weight: bold;
+	color: #212121;
+	text-align: center;
+}
+.content p {
+	font-style: italic;
+	margin-bottom: 10px;
+	height: 88px;
+	overflow: hidden;
+	padding: 5px;
+}
+ul:nth-child(4){
+	float: right;
+}
+ul:nth-child(4) li {
+	float: left;
+	list-style: none;
+}
+ul:nth-child(4) a {
+	border-right: 1px solid black;
+	text-align: center;
+	background-color: orange;
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 205px;
+	height: 27px;
+	line-height: 27px;
+	transition: all 0.2s;
+}
+ul:nth-child(4) a:hover {
+	transition: all 0.2s;
+	background-color: #ef6c00;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+ul:nth-child(4) .last_content_ch {
+	border: none;
+}
+.parallax-container {
+	width: 100%;
+	float: right;
+	height: 120px;
+}
+.clear {
+	clear: both;
+}
+footer{
+	padding: 10px;
+	margin: 0 auto;
+	height: 180px;
+	background-color: #d32f2f;
+}
+footer ul{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	list-style: none;
+}
+footer ul li {
+	float: left;
+}
+footer ul li a {
+	color: #1976d2;
+	font-weight: bold;
+	display: block;
+	width: 160px;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: white;
+}
+footer img {
+	margin-top: 10px;
+	float: right;
+	width: 100px;
+	height: 80px;
+	margin-right: 15px;
+}
+footer p {
+	text-align: right;
+	color: white;
+	margin-right: 5px;
+	margin-left: 20px;
+	margin-top: 30px;
+	float: right;
+}
+.myemail{
+	float: left;
+	margin-top: 30px;
+}

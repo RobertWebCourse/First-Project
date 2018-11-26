@@ -28,8 +28,9 @@ h5 {
 	background-color: #a5d6a7;
 }
 
-.parallax img {
+.parallax-container {
 	width: 100%;
+	float: right;
 	height: 300px;
 }
 .card-image {

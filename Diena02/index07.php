@@ -17,8 +17,8 @@
 	</ul>
 	<ul>
 		<?php 
-			foreach ($cities4 as $key => $value) {
-				echo "$value ";
+			for ($i=0; $i < count($cities4); $i++) { 
+				echo $cities4[$i].'  ';
 			}
 		?>
 	</ul>

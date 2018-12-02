@@ -1,5 +1,5 @@
 <?php 
-	$cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas'];
+	print_r($cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +16,11 @@
 		?>
 	</ul>
 	<ul>
-		<?php 
-			for ($i=0; $i < count($cities4); $i++) { 
-				echo $cities4[$i].'  ';
-			}
-		?>
+		<?php
+      		foreach ($cities4 as $city) {
+        		echo "<li>$city</li>";
+     		}
+        ?>
 	</ul>
 </body>
 </html>

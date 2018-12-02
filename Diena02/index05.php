@@ -1,17 +1,12 @@
 <?php 
 	$cities3 = [
-		"Tokijas" => ['Tokijas', '1868', 'Japonija'],
+		"Tokijas" => ['13.6', '1868', 'Japonija'],
 		"Vasingtonas" => ['0.6', '1790', 'JAV'],
 		"Makva" => ['11.5', '1147', 'Rusija'],
 	];
 
-	$ang = ["Londonas" => ['8,6', '43', 'Anglija']];
+	$cities3 ["Londonas"] = ['8,6', '43', 'Anglija'];
 
-	$cities3[] = $ang;
-
-	foreach ($cities3 as $key => $value) {
-		print_r($value);
-	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,27 +16,9 @@
 </head>
 <body>
 	<ul>
-		<li>
-			<?php 
-				foreach ($ang as $key => $value) {
-					print_r("Gyventoju skacius: $value[0]");
-				}
-			?>
-		</li>
-		<li>
-			<?php 
-				foreach ($ang as $key => $value) {
-					print_r("Gyventoju skacius: $value[1] mln.");
-				}
-			?>
-		</li>
-		<li>
-			<?php 
-				foreach ($ang as $key => $value) {
-					print_r("Gyventoju skacius: $key m.");
-				}
-			?>
-		</li>
+		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][0]; ?></li>
+		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][1]; ?></li>
+		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][2]; ?></li>
 	</ul>
 </body>
 </html>

@@ -3,17 +3,20 @@
 		public $name;
 		public $surname;
 
-		public $jonas;
-		public $andrius;
-
-		public function hello($name, $surname) {
-			echo $name.' '.$surname.'<br>';
+		public function hello() {
+			echo 'Hello, '.$this -> name.' '.$this -> surname.'<br>';
 		}
 	}
 
-	$people1 = new people();
-	$people2 = new people();
+	$jonas = new people();
+	$andrius = new people();
 
-	$people1 -> hello('Jonas', 'Jonaitis');
-	$people2 ->hello('Andrius', 'Andriusaitis');
+	$jonas -> name = "Jonas";
+	$jonas -> surname = 'Jonaitis';
+
+	$andrius -> name = 'Andrius';
+	$andrius -> surname = 'Andriusaitis';
+
+	echo $jonas -> hello();
+	echo $andrius -> hello();
 ?>

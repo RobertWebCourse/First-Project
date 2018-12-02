@@ -1,12 +1,7 @@
 <?php 
-	function stacia2() {
-
-		$a = $_GET['a'];
-		$b = $_GET['b'];
-		$result = $a * 2 + $b * 2;
-		echo $result;
-	}
-	stacia2();
+	$a = $_POST['a'];
+	$b = $_POST['b'];
+	echo $a * $b;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +10,7 @@
 	<title>Form</title>
 </head>
 <body>
-	<form action="<?php $result; ?>" method="GET">
+	<form action="<?php $_PHP_SELF; ?>" method="POST">
 		<label><p>A:</p><input type="text" name = "a"></label><label>
 		<label><p>B:</p><input type="text" name = "b"></label><label> 
 		<input type="submit" value="get result">

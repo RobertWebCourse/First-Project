@@ -1,21 +1,15 @@
 <?php 
 	$cities = ['Berlynas','Roma','Londonas'];
 	$cities[] = 'Tokijas';
-	for ($i=0; $i < count($cities); $i++) {
-		print_r($cities[$i].'<br><br>');
-	}
+	print_r($cities);
 
-	$cities2 = [
+	print_r($cities2 = [
 		'tokija' => 13.6,
 		'vasingtonas' => 0.6,
 		'maskva' => 11.5
-	];
+	]);
 
 	echo $cities['Londonas'] = 8.6.' '; 
-
-	foreach ($cities2 as $key => $value) {
-		echo "$key - $value ";
-	}
 
 
 ?>
@@ -27,9 +21,11 @@
 	</head>
 	<body>
 		<ul>
-			<?php  
-				echo "<li>$cities[2]</li>";
-			?>
+			<li>
+				<?php  
+					echo $cities[2];
+				?>
+			</li>
 		</ul>
 		<ul>
 			<?php 

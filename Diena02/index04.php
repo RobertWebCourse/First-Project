@@ -10,6 +10,7 @@
 	]);
 
 	echo $cities['Londonas'] = 8.6.' '; 
+	print_r($cities2);
 
 
 ?>

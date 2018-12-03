@@ -1,9 +1,9 @@
 <?php 
 
 	$cities3 = [
-		"Tokijas" => ['13.6', 1868, 'Japonija'],
-		"Vasingtonas" => ['0.6', 1790, 'JAV'],
-		"Makva" => ['11.5', 1147, 'Rusija'],
+		"Tokijas" => [13.6, 1868, 'Japonija'],
+		"Vasingtonas" => [0.6, 1790, 'JAV'],
+		"Makva" => [11.5, 1147, 'Rusija'],
 	];
 
 	$metai = 1774;

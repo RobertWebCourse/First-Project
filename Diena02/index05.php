@@ -17,8 +17,8 @@
 <body>
 	<ul>
 		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][0]; ?></li>
-		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][1]; ?></li>
-		<li><?php echo "Gyventoju skaicius: ".$cities3['Londonas'][2]; ?></li>
+		<li><?php echo "Ikurtas: ".$cities3['Londonas'][1]; ?></li>
+		<li><?php echo "Salis: ".$cities3['Londonas'][2]; ?></li>
 	</ul>
 </body>
 </html>

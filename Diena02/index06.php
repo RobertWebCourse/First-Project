@@ -15,6 +15,6 @@
 		echo "JAV sostine vis dar Filadelfijoje";
 	}
 	else {
-		echo $cities3['Vasingtonas'][1] - $metai;
+		echo "Liko: ".($cities3['Vasingtonas'][1] - $metai)." metu iki Vasingtono sukurimo";
 	}
 ?>

@@ -1,5 +1,5 @@
 <?php 
-	print_r($cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas']);
+	$cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

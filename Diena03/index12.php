@@ -1,12 +1,9 @@
-<?php 
-	function stacia() {
-		$a = $_GET['name'];
-		$b = $_GET['surname'];
-		if($a && $b) {
-			echo $result = 'Vardas: '.$a.'<br>'.'Pavarde: '.$b;
-			exit();
-		}
-		stacia();
+<?php
+	$a = $_GET['name'];
+	$b = $_GET['surname'];
+	if($a && $b) {
+		echo 'Vardas: '.$a.'<br>'.'Pavarde: '.$b;
+		exit();
 	}
 ?>
 <!DOCTYPE html>
@@ -16,7 +13,7 @@
 	<title>Form</title>
 </head>
 <body>
-	<form action="<?php $result ?>" method="GET">
+	<form action="" method="GET">
 		<label><p>Name:</p><input type="text" name = "name"></label><label>
 		<label><p>Surname:</p><input type="text" name = "surname"></label><label> 
 		<input type="submit" value="get result">

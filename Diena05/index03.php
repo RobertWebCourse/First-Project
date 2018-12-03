@@ -1,5 +1,5 @@
 <?php 
-	class people {
+	class person {
 		public $name;
 		public $surname;
 
@@ -8,8 +8,8 @@
 		}
 	}
 
-	$jonas = new people();
-	$andrius = new people();
+	$jonas = new person();
+	$andrius = new person();
 
 	$jonas -> name = "Jonas";
 	$jonas -> surname = 'Jonaitis';

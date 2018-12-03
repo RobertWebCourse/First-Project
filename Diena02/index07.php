@@ -1,5 +1,6 @@
 <?php 
 	$cities4 = ['Tokijas', 'Vasingtonas', 'Maskva', 'Londonas'];
+	print_r($cities4);
 ?>
 <!DOCTYPE html>
 <html lang="en">

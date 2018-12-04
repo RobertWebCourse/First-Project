@@ -1,37 +1,32 @@
-<?php 
-	$cities = ['Berlynas','Roma','Londonas'];
-	$cities[] = 'Tokijas';
-	print_r($cities);
+<?php $cities = ['Berlynas', 'Roma', 'Londonas'];
+  $cities[] = 'Tokijas';
+  $cities2 = [
+    'Tokijas' => 13.6,
+    'Vasingtonas' => 0.6,
+    'Maskva' => 11.5
+  ];
+  print_r($cities);
+  $cities2 ['Londonas'] = 8.6;
+ ?>
 
-	print_r($cities2 = [
-		'tokija' => 13.6,
-		'vasingtonas' => 0.6,
-		'maskva' => 11.5
-	]);
-
-	echo $cities['Londonas'] = 8.6.' '; 
-	print_r($cities2);
-
-
-?>
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Cities</title>
-	</head>
-	<body>
-		<ul>
-			<li>
-				<?php  
-					echo $cities[2];
-				?>
-			</li>
-		</ul>
-		<ul>
-			<?php 
-				print_r("Gyventojų skaičius: ".$cities2['tokija']." mln");
-			?>
-		</ul>
-	</body>
-	</html>	
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <ul>
+      <li><?php echo $cities[1]; ?></li>
+    </ul>
+
+    <ul>
+     <?php
+       foreach ($cities2 as $city => $citizens) {
+         echo "<li>$city Gyventoju skaicius: $citizens</li>";
+       };
+      ?>
+   </ul>
+  </body>
+</html>

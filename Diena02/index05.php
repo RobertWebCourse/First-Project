@@ -4,7 +4,7 @@
 		"Vasingtonas" => [0.6, 1790, 'JAV'],
 		"Makva" => [11.5, 1147, 'Rusija']
 	];
-	print_r($cotoes3);
+	print_r($cities3);
 	$cities3 ["Londonas"] = [8,6, 43, 'Anglija'];
 
 ?>

@@ -1,0 +1,306 @@
+@media screen and (min-width: 900px) {
+  .sendMail {
+    transition: all 0.5s;
+    display: none;
+    width: 100%;
+    height: 100%;
+    height: 113.3%;
+    position: absolute;
+    z-index: 7;
+    background-color: rgba(119, 119, 119, 0.0);
+  }
+  .textUs {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  .sendMail form {
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    max-height: 50%;
+    max-width: 70%;
+    transition: all 0.2s;
+    z-index: 8;
+    background: white;
+    position: fixed;
+    left: 30%;
+    top: 35%;
+    box-shadow: 0px 0px 1px black;
+  }
+  .sendMail form textarea {
+    background-color: white;
+  }
+  .sendMail input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    height: 40px;
+    background: orange;
+  }
+  .sendMail input[type="submit"]:hover {
+    cursor: pointer;
+  }
+  .parallax-container {
+    z-index: -3;
+    position: absolute;
+  }
+  address {
+    margin: 0 auto;
+    width: 255px;
+  }
+  #login_user input {
+    margin-left: 3px;
+    width: 200px;
+  }
+  #last_name, #first_name, #password, #email{
+    width: 190px;
+  }
+  .contacts_user button[type="submit"] {
+    width: 100%;
+  }
+  .contacts_user {
+    z-index: 1;
+    margin-right: 40px;
+    float: right;
+    width: 190px;
+    top: 130px;
+    left: 735px;
+  }
+  #login_user {
+    background-color: #eeeeee;
+    position: absolute;
+    margin-left: 13px;
+    width: 210px;
+    margin-left: 20px;
+  }
+  #login_user h5 {
+    margin-top: 0px;
+    margin-bottom: 0
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  .sendMail {
+    transition: all 0.5s;
+    display: none;
+    width: 100%;
+    height: 100%;
+    height: 500%;
+    position: absolute;
+    z-index: 7;
+    background-color: rgba(119, 119, 119, 0.0);
+  }
+  .sendMail form {
+    display: none;
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    max-height: 50%;
+    max-width: 70%;
+    transition: all 0.2s;
+    z-index: 12;
+    background: white;
+    position: fixed;
+    left: 30%;
+    top: 35%;
+  }
+}
+@media screen and (max-width: 499px) {
+  .sendMail {
+    transition: all 0.5s;
+    display: none;
+    width: 100%;
+    height: 100%;
+    height: 310%;
+    position: absolute;
+    z-index: 7;
+    background-color: rgba(119, 119, 119, 0.0);
+  }
+  .sendMail form {
+    border-radius: 5px;
+    width: 0px;
+    height: 0px;
+    max-height: 50%;
+    max-width: 70%;
+    transition: all 0.2s;
+    z-index: 8;
+    background: white;
+    position: fixed;
+    left: 30%;
+    top: 35%;
+  }
+  .parallax-container {
+    float: none;
+  }
+  .contacts {
+    width: 70%;
+    height: 670px;
+    clear: both;
+  }
+  address {
+    overflow: hidden;
+    z-index: 1;
+    left: 170px;
+    position: absolute;
+    float: right;
+    width: 140px;
+  }
+  #login_user {
+    float: left;
+    width: 100%;
+  }
+  #last_name, #first_name, #password, #email{
+    width: 100px;
+  }
+  .contacts_user {
+    width: 50%;
+    padding: 10px;
+    right: 40px;
+    float: left;
+    position: relative;
+  }
+  .contacts_user button[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #9A12B3;
+z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(../../images/ball-triangle.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+.contacts{
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+.my_contacts h5 {
+	text-align: center;
+	height: 40px;
+	background-color: #00bcd4;
+	color: white;
+	line-height: 40px;
+}
+.my_contacts ul {
+	width: 255px;
+	margin-left: 5px;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+.my_contacts ul li {
+	margin-top: 20px;
+}
+.contacts_user{
+	background-color: white;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8);
+	z-index: 2;
+}
+.contacts_user h5 {
+	text-align: center;
+}
+#last_name, #first_name, #password, #email {
+	margin: 0 auto;
+}
+#login_user {
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 5px;
+}
+#login_user h5 {
+	text-align: center;
+	height: 50px;
+	background-color: red;
+}
+#login_user button {
+	width: 100%;
+	background-color: #ff795b;
+}
+.parallax-container {
+	width: 100%;
+	height: 300px;
+}
+footer {
+	margin-top: 0px;
+}
+.nav-login button {
+          cursor: pointer;
+          color: white;
+          font-weight: bold;
+          font-size: 25px;
+          width: 200px;
+          height: 50px;
+          margin-left: 250px;
+          border: none;
+          margin-top: 5px;
+          background-color: orange;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc2828+0,ef6700+100 */
+          background: #cc2828; /* Old browsers */
+        background: -webkit-linear-gradient(#cc2828 0%, #ef6700 100%);
+        background: -o-linear-gradient(#cc2828 0%, #ef6700 100%);
+        background: linear-gradient(#cc2828 0%, #ef6700 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2828', endColorstr='#ef6700',GradientType=0 ); /* IE6-9 */
+        }
+.join {
+  font-style: italic;
+  color: red;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.join:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+#login_user h5 {
+  text-align: center;
+  color: white;
+  height: 35px;
+  line-height: 35px;
+}
+button[name="logout"] {
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+button[name="logout"]:hover {
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+body {
+  background-image: url('../../images/programm_back.jpg');
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: 100% 100%;
+
+}
+.nav-login button[name="login"] {
+  margin-left: 0px;
+}
+.clear {
+  clear: both;
+}

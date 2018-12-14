@@ -79,6 +79,10 @@
   }
 }
 @media screen and (min-width: 500px) and (max-width: 899px) {
+  form button[name="logout"] {
+    margin-right: 10px;
+    width: 40%;
+  }
   .sendMail {
     transition: all 0.5s;
     display: none;
@@ -105,6 +109,10 @@
   }
 }
 @media screen and (max-width: 499px) {
+  form button[name="logout"] {
+    margin-right: 10px;
+    width: 30%;
+  }
   .sendMail {
     transition: all 0.5s;
     display: none;
